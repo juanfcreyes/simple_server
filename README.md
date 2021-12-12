@@ -13,11 +13,14 @@ De esta manera se levantara un serivdor http local en el puerto 8080
 
 ## Ejecución en docker
 
-# Creación de la imagen
- docker build . -t <image_name>
+Para la ejecuión de la solucion en docker se debe realizar los siguientes pasos
+### Creación de la imagen
+Para la creación de la imagen se debe ejecutar el siguiente comando
+ `$ docker build . -t <image_name>`
 
-# Correr solución en docker
- docker run -p <public_port>:<private_port> -d <image_name>
+### Ejecución de la  solución en docker
+Una vez generada la imagen puede levantarse la solucion ejecutando el siguiente comando
+ `$ docker run -p <public_port>:<private_port> -d <image_name>`
 
 ## Licencia
 GNU GENERAL PUBLIC LICENSE
